@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to use AutoSSR on Android? &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to use ShadowsocksR on windows?" href="shadowsocksr_win.html" />
+    <link rel="prev" title="How to use AutoSSR on iOS?" href="shadowrocket.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TOP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">Global decentralized-community alliance program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken Public-Sale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken_sale.html">How to participate in Stoken Public-Sale?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken Referral Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_join_the_whitelist.html">How to join the whitelist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="query_stoken.html">How to query Stoken data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">New Contracts on Ethereum</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken Main Contract</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Technique</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - Distributed DataBase Based On BlockChain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Letters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">What you need to know as an investor</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Available services</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">BEYOU CONNECT (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: FREE ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to use AutoSSR on Android?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install">Download and install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-autossr-subscribe">Add AutoSSR Subscribe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-choose-and-use-rules">How to choose and use rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keep-it-connected">Keep it connected</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">Optimized shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gas.html">How to set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> and <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imtoken.html">ETH wallet: imToken on Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metamask.html">ETH wallet: MetaMask on PC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to use AutoSSR on Android?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install">Download and install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-autossr-subscribe">Add AutoSSR Subscribe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-choose-and-use-rules">How to choose and use rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keep-it-connected">Keep it connected</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eth_wallet.html">How to use an ETH wallet?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken2_migration.html">Stoken migration guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References and views</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken’s pricing logic and early opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">About Internet in China mainland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">BASIC PRINCIPLES</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">Contributing to Beyou Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">Exchange whitelist plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/chat.html">Chatting in group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">Donate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">Have questions or have an issue?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Policy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken shareholders program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">Chatting group</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Whitepaper v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Our Philosophy: Yearning for freedom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">Design concept and design principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Application description and economic model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">Technical path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/more.html">More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/token_and_distribution_plan.html">Stoken and distribution plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/special_tips.html">Special tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/official_website.html">Official website</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact us</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>How to use AutoSSR on Android?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guide/ssrr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-use-autossr-on-android">
+<span id="guide-for-ssrr"></span><h1>How to use AutoSSR on Android?<a class="headerlink" href="#how-to-use-autossr-on-android" title="Permalink to this headline">¶</a></h1>
+<p>Subscribe <a class="reference internal" href="../services/autossr.html#autossr"><span class="std std-ref">AutoSSR: FREE ShadowsocksR</span></a> in <a class="reference external" href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">SSRR</a> on Android.</p>
+<div class="section" id="download-and-install">
+<h2>Download and install<a class="headerlink" href="#download-and-install" title="Permalink to this headline">¶</a></h2>
+<p>You can touch this link for <a class="reference external" href="https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.3/shadowsocksr-android-3.5.3.apk">Download shadowsocksr-android-3.5.3.apk</a></p>
+<a class="reference internal image-reference" href="../_images/install.png"><img alt="install.png" class="align-center" src="../_images/install.png" style="width: 60%;" /></a>
+<p>Launch it:</p>
+<a class="reference internal image-reference" href="../_images/desktop1.png"><img alt="desktop.png" class="align-center" src="../_images/desktop1.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="add-autossr-subscribe">
+<h2>Add AutoSSR Subscribe<a class="headerlink" href="#add-autossr-subscribe" title="Permalink to this headline">¶</a></h2>
+<p>Go to the profiles:</p>
+<a class="reference internal image-reference" href="../_images/main1.png"><img alt="main.png" class="align-center" src="../_images/main1.png" style="width: 60%;" /></a>
+<p>Add SSR Subscription:</p>
+<a class="reference internal image-reference" href="../_images/list_menu.png"><img alt="list_menu.png" class="align-center" src="../_images/list_menu.png" style="width: 60%;" /></a>
+<p>Fill the blank, with one of the links of <a class="reference internal" href="../services/autossr.html#autossr"><span class="std std-ref">AutoSSR: FREE ShadowsocksR</span></a>,
+the <strong>stable</strong> and <strong>online</strong> is recommended, we choose the stable one here:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// copy this
+https://git.io/autossr_stable
+</pre></div>
+</div>
+<p>then press <strong>OK</strong>:</p>
+<a class="reference internal image-reference" href="../_images/subscribe_add.png"><img alt="subscribe_add.png" class="align-center" src="../_images/subscribe_add.png" style="width: 60%;" /></a>
+<p>Save and update:</p>
+<a class="reference internal image-reference" href="../_images/subscribe_list.png"><img alt="subscribe_list.png" class="align-center" src="../_images/subscribe_list.png" style="width: 60%;" /></a>
+<p>Choose one:</p>
+<a class="reference internal image-reference" href="../_images/list1.png"><img alt="list.png" class="align-center" src="../_images/list1.png" style="width: 60%;" /></a>
+<p>Connect:</p>
+<a class="reference internal image-reference" href="../_images/server.png"><img alt="server.png" class="align-center" src="../_images/server.png" style="width: 60%;" /></a>
+<p>It is <strong>connected</strong> now.</p>
+<p>If you want to check it:</p>
+<a class="reference internal image-reference" href="../_images/connected1.png"><img alt="connected.png" class="align-center" src="../_images/connected1.png" style="width: 60%;" /></a>
+<p>Here is the result.</p>
+<a class="reference internal image-reference" href="../_images/tested.png"><img alt="tested.png" class="align-center" src="../_images/tested.png" style="width: 60%;" /></a>
+<p>Enjoy!!</p>
+</div>
+<div class="section" id="how-to-choose-and-use-rules">
+<h2>How to choose and use rules<a class="headerlink" href="#how-to-choose-and-use-rules" title="Permalink to this headline">¶</a></h2>
+<p>A suitable rule configuration can help you optimize routing paths,
+increase speed and save traffic. If you want this feature,
+there is a wonderful repository <a class="reference external" href="https://github.com/lhie1/Rules">lhie1/Rules</a>.
+Great thanks to <a class="reference external" href="https://github.com/lhie1">lhie1</a>.</p>
+<p>To enable the rules, follow the steps below:</p>
+<p>Swipe up to <strong>Feature Settings - Route</strong>:</p>
+<a class="reference internal image-reference" href="../_images/route.png"><img alt="route.png" class="align-center" src="../_images/route.png" style="width: 60%;" /></a>
+<p>Choose <strong>Customize ACL File</strong>:</p>
+<a class="reference internal image-reference" href="../_images/route_choose.png"><img alt="route_choose.png" class="align-center" src="../_images/route_choose.png" style="width: 60%;" /></a>
+<p>For <a class="reference external" href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">SSRR</a>, the ACL File</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
+</pre></div>
+</div>
+<p>is recommended,
+it is provided in <a class="reference external" href="https://github.com/lhie1/Rules#android-ssr-acl">Android SSR ACL in lhie1/Rules</a>.</p>
+<p>Paste the <strong>URL</strong> and press <strong>OK</strong>:</p>
+<a class="reference internal image-reference" href="../_images/acl.png"><img alt="acl.png" class="align-center" src="../_images/acl.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../_images/acl_done.png"><img alt="acl_done.png" class="align-center" src="../_images/acl_done.png" style="width: 60%;" /></a>
+<p>Well done.</p>
+</div>
+<div class="section" id="keep-it-connected">
+<h2>Keep it connected<a class="headerlink" href="#keep-it-connected" title="Permalink to this headline">¶</a></h2>
+<p>Keep it connected, and you are free to visit everywhere.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="shadowsocksr_win.html" class="btn btn-neutral float-right" title="How to use ShadowsocksR on windows?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="shadowrocket.html" class="btn btn-neutral float-left" title="How to use AutoSSR on iOS?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

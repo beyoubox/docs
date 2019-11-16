@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken’s pricing logic and early opportunities &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="About Internet in China mainland" href="internet_in_china.html" />
+    <link rel="prev" title="Stoken migration guide" href="../guide/stoken2_migration.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TOP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">Global decentralized-community alliance program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken Public-Sale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">How to participate in Stoken Public-Sale?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken Referral Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">How to join the whitelist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">How to query Stoken data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">New Contracts on Ethereum</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken Main Contract</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Technique</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - Distributed DataBase Based On BlockChain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Letters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">What you need to know as an investor</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Available services</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">BEYOU CONNECT (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: FREE ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">Optimized shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">How to set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> and <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">ETH wallet: imToken on Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">ETH wallet: MetaMask on PC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">How to use an ETH wallet?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken migration guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References and views</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stoken’s pricing logic and early opportunities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-first-crypto-currency-with-clear-usage-value">The first crypto-currency with clear usage value</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-stoken">What is Stoken?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stoken-100gb-client-traffic-flow">1 Stoken = 100GB client traffic flow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-much-does-100gb-traffic-cost">How much does 100GB traffic cost?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-price-of-resource-in-an-idc">The price of resource in an IDC</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-price-during-the-public-sale-0-03377-0-121">Stoken price during the Public-Sale: $0.03377 - $0.121</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-principles-of-the-beyou-network">3 basic principles of the Beyou Network</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="internet_in_china.html">About Internet in China mainland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_principles.html">BASIC PRINCIPLES</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">Contributing to Beyou Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">Exchange whitelist plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/chat.html">Chatting in group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">Donate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">Have questions or have an issue?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Policy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken shareholders program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">Chatting group</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Whitepaper v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Our Philosophy: Yearning for freedom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">Design concept and design principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Application description and economic model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">Technical path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/more.html">More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/token_and_distribution_plan.html">Stoken and distribution plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/special_tips.html">Special tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/official_website.html">Official website</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact us</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken’s pricing logic and early opportunities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/views/stoken_pricing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken-s-pricing-logic-and-early-opportunities">
+<span id="stoken-pricing"></span><h1>Stoken’s pricing logic and early opportunities<a class="headerlink" href="#stoken-s-pricing-logic-and-early-opportunities" title="Permalink to this headline">¶</a></h1>
+<p>Just think about one question:</p>
+<div class="line-block">
+<div class="line">IF YOU HAVE A CHANCE, THAT</div>
+<div class="line"><strong>YOU CAN PAY $1 FOR A $100 REAL CASH</strong>,</div>
+<div class="line">FIRST COME FIRST SERVED,</div>
+<div class="line"><strong>HOW MUCH DO YOU WANT</strong>?</div>
+</div>
+<div class="section" id="the-first-crypto-currency-with-clear-usage-value">
+<h2>The first crypto-currency with clear usage value<a class="headerlink" href="#the-first-crypto-currency-with-clear-usage-value" title="Permalink to this headline">¶</a></h2>
+<p>The vast majority of blockchain networks are just a set of accounting systems.
+Those crypto-currencies do not rely on any anchoring or credit to issue,
+and their price support comes from the holder’s beliefs.</p>
+<p>But Stoken is quite different.</p>
+<div class="section" id="what-is-stoken">
+<h3>What is Stoken?<a class="headerlink" href="#what-is-stoken" title="Permalink to this headline">¶</a></h3>
+<p><strong>Stoken</strong> is the unique token in the Beyou Network ecosystem,
+which uses Proof of Traffic consensus mechanism.
+It is the native asset on the vnCHAIN.</p>
+</div>
+<div class="section" id="stoken-100gb-client-traffic-flow">
+<h3>1 Stoken = 100GB client traffic flow<a class="headerlink" href="#stoken-100gb-client-traffic-flow" title="Permalink to this headline">¶</a></h3>
+<p><strong>Stoken</strong> is the first crypto-currency with clear usage value.</p>
+<p>In the underlying code, 1 Stoken was defined as the client traffic of 100GBytes,
+that is: <strong>1 Stoken = 100GB client traffic flow</strong>.</p>
+</div>
+</div>
+<div class="section" id="how-much-does-100gb-traffic-cost">
+<h2>How much does 100GB traffic cost?<a class="headerlink" href="#how-much-does-100gb-traffic-cost" title="Permalink to this headline">¶</a></h2>
+<p>Including the traffic,
+the price of all types of network resources can be clearly checked
+by major IDC service providers,
+which are clearly priced.</p>
+<div class="section" id="the-price-of-resource-in-an-idc">
+<h3>The price of resource in an IDC<a class="headerlink" href="#the-price-of-resource-in-an-idc" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html#the-price-of-resource-in-an-idc"><span class="std std-ref">The price of resource in an IDC</span></a></p>
+<p>For 100GB network traffic, there is a price reference for mature IDC,
+with Amazon Web Services AWS, for example, priced at about <strong>$8.50</strong> per 100GB traffic
+and Google Cloud Platform GCP at about <strong>$8.0</strong>.</p>
+<p>Accelerating traffic is more expensive, while ordinary traffic is cheaper.</p>
+<dl class="simple">
+<dt>AWS Amazon Web Services:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://aws.amazon.com/directconnect/pricing/">AWS Direct Connect pricing</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/cloudfront/pricing/">AWS CloudFront Pricing</a></p></li>
+</ul>
+</dd>
+<dt>GCP Google Cloud Platform:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://cloud.google.com/interconnect/">GCP Interconnect Pricing</a></p></li>
+<li><p><a class="reference external" href="https://cloud.google.com/cdn/pricing/">GCP CDN Pricing</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="stoken-price-during-the-public-sale-0-03377-0-121">
+<h2>Stoken price during the Public-Sale: $0.03377 - $0.121<a class="headerlink" href="#stoken-price-during-the-public-sale-0-03377-0-121" title="Permalink to this headline">¶</a></h2>
+<p><span class="xref std std-ref">incremental_stoken_sales_price</span></p>
+<p>Starting at <strong>1 Stoken = $0.03377</strong>, until the price reaches <strong>$0.121</strong>.</p>
+<p>More details: <a class="reference internal" href="../stoken/stoken_sale.html#stoken2-sale"><span class="std std-ref">Stoken Public-Sale</span></a></p>
+</div>
+<div class="section" id="basic-principles-of-the-beyou-network">
+<h2>3 basic principles of the Beyou Network<a class="headerlink" href="#basic-principles-of-the-beyou-network" title="Permalink to this headline">¶</a></h2>
+<p>There are 3 basic principles in the Beyou Network ecosystem:</p>
+<ol class="arabic">
+<li><p>Freedom, equality, openness, sharing, is the basic gene of the Internet,
+communication security and privacy protection are the basic rights of users.</p></li>
+<li><p>Service generates real value.</p></li>
+<li><div class="line-block">
+<div class="line">The user pays, and the service provider charges,</div>
+<div class="line"><strong>IT IS THE NATURAL TRADING SCENARIO</strong>.</div>
+</div>
+</li>
+</ol>
+<p>They are the foundation of the project,
+the law of value that is non-human resistant,
+also our belief:
+If these three principles are established,
+the value of the entire project will be established, for sure, no doubt it.</p>
+<hr class="docutils" />
+<p>Join us, join the revolution.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="internet_in_china.html" class="btn btn-neutral float-right" title="About Internet in China mainland" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../guide/stoken2_migration.html" class="btn btn-neutral float-left" title="Stoken migration guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

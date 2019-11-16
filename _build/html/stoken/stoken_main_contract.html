@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken Main Contract &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ChainStore - Distributed DataBase Based On BlockChain" href="../technique/chain_store.html" />
+    <link rel="prev" title="How to query Stoken data" href="../guide/query_stoken.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TOP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">Global decentralized-community alliance program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken_sale.html">Stoken Public-Sale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">How to participate in Stoken Public-Sale?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken Referral Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">How to join the whitelist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">How to query Stoken data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">New Contracts on Ethereum</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stoken Main Contract</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-token-symbol-named-stoken">The token symbol named <code class="docutils literal notranslate"><span class="pre">Stoken</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features-and-functions">Features and functions</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Technique</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - Distributed DataBase Based On BlockChain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Letters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">What you need to know as an investor</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Available services</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">BEYOU CONNECT (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: FREE ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">Optimized shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">How to set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> and <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">ETH wallet: imToken on Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">ETH wallet: MetaMask on PC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">How to use an ETH wallet?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken migration guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References and views</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken’s pricing logic and early opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">About Internet in China mainland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">BASIC PRINCIPLES</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">Contributing to Beyou Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">Exchange whitelist plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/chat.html">Chatting in group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">Donate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">Have questions or have an issue?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Policy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken shareholders program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">Chatting group</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Whitepaper v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Our Philosophy: Yearning for freedom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">Design concept and design principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Application description and economic model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">Technical path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/more.html">More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/token_and_distribution_plan.html">Stoken and distribution plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/special_tips.html">Special tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/official_website.html">Official website</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact us</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken Main Contract</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/stoken/stoken_main_contract.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken-main-contract">
+<span id="stoken2-main-contract"></span><h1>Stoken Main Contract<a class="headerlink" href="#stoken-main-contract" title="Permalink to this headline">¶</a></h1>
+<p>This is the <strong>MAIN CONTRACT</strong> of <a class="reference internal" href="../whitepaper/application_description_and_economic_model.html#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a>, updated and deployed at <code class="docutils literal notranslate"><span class="pre">2019-10-02</span> <span class="pre">16:12:41</span> <span class="pre">UTC</span></code>.</p>
+<p><a class="reference internal" href="../_images/etherscan_verified.svg"><img alt="logo_etherscan_verified" height="36px" src="../_images/etherscan_verified.svg" width="36px" /></a> <a class="reference internal" href="../_images/github.svg"><img alt="logo_github" height="36px" src="../_images/github.svg" width="36px" /></a> <a class="reference internal" href="../_images/verified.svg"><img alt="logo_verified" height="36px" src="../_images/verified.svg" width="36px" /></a></p>
+<ul class="simple">
+<li><p>Contract address is <strong>0x37C7e57f28f1c481Ffa354f5B21F159f8c51782b</strong></p></li>
+<li><p>Deployed at <a class="reference external" href="https://etherscan.io/tx/0xd88541481a39c1e3b26e7cc93679d10466871c01675eae7f72892e16da0442fc">Tx Hash 0xd88541481a39c1e3b26e7cc93679d10466871c01675eae7f72892e16da0442fc</a></p></li>
+<li><p>Block height <a class="reference external" href="https://etherscan.io/block/6495749">#6495749</a></p></li>
+<li><p>Open-sourced under the <a class="reference external" href="https://github.com/beyoubox/contracts/LICENSE">GNU General Public License v3.0</a></p></li>
+<li><p><a class="reference external" href="https://github.com/beyoubox/contracts/BeyouCoin.sol">View contract code on github repository</a></p></li>
+</ul>
+<p>View on Etherscan.io:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://etherscan.io/token/0x37C7e57f28f1c481Ffa354f5B21F159f8c51782b">Stoken transactions tracker</a></p></li>
+<li><p><a class="reference external" href="https://etherscan.io/address/0x37C7e57f28f1c481Ffa354f5B21F159f8c51782b">View transactions and interactions of the contract</a></p></li>
+<li><p><a class="reference external" href="https://etherscan.io/address/0x37C7e57f28f1c481Ffa354f5B21F159f8c51782b#readContract">Read contract on Etherscan.io</a></p></li>
+<li><p><a class="reference external" href="https://etherscan.io/address/0x37C7e57f28f1c481Ffa354f5B21F159f8c51782b#writeContract">Write contract on Etherscan.io</a></p></li>
+</ul>
+<div class="section" id="the-token-symbol-named-stoken">
+<h2>The token symbol named <code class="docutils literal notranslate"><span class="pre">Stoken</span></code><a class="headerlink" href="#the-token-symbol-named-stoken" title="Permalink to this headline">¶</a></h2>
+<p>Displayed in various wallet software such as <a class="reference external" href="https://metamask.io/">MetaMask</a>,
+<a class="reference external" href="https://www.myetherwallet.com/">MyEtherWallet</a>, <a class="reference external" href="https://imkey.im/">imToken</a>, <a class="reference external" href="https://etherscan.io/">etherscan.io</a> and Ethereum blockchain browsers.</p>
+</div>
+<div class="section" id="features-and-functions">
+<h2>Features and functions<a class="headerlink" href="#features-and-functions" title="Permalink to this headline">¶</a></h2>
+<dl id="stoken-based-on-erc20">
+<dt>Based on <a class="reference external" href="https://eips.ethereum.org/EIPS/eip-20">[EIP 20] ERC-20 Token Standard</a> of <a class="reference external" href="https://www.ethereum.org">Ethereum</a></dt><dd><p>Includes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">name()</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(string)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">symbol()</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(string)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">decimals()</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(uint8)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">totalSupply()</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(uint256)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">balanceOf(address</span> <span class="pre">account)</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(uint256)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">transfer(address</span> <span class="pre">recipient,</span> <span class="pre">uint256</span> <span class="pre">amount)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(bool)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">transferFrom(address</span> <span class="pre">sender,</span> <span class="pre">address</span> <span class="pre">recipient,</span> <span class="pre">uint256</span> <span class="pre">amount)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(bool)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">approve(address</span> <span class="pre">spender,</span> <span class="pre">uint256</span> <span class="pre">value)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(bool)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">allowance(address</span> <span class="pre">owner,</span> <span class="pre">address</span> <span class="pre">spender)</span> <span class="pre">public</span> <span class="pre">view</span> <span class="pre">returns</span> <span class="pre">(uint256)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span> <span class="pre">Transfer(address</span> <span class="pre">indexed</span> <span class="pre">from,</span> <span class="pre">address</span> <span class="pre">indexed</span> <span class="pre">to,</span> <span class="pre">uint256</span> <span class="pre">value)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span> <span class="pre">Approval(address</span> <span class="pre">indexed</span> <span class="pre">owner,</span> <span class="pre">address</span> <span class="pre">indexed</span> <span class="pre">spender,</span> <span class="pre">uint256</span> <span class="pre">value)</span></code></p></li>
+</ul>
+<p>With advanced functions for allowance:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">increaseSupply(address</span> <span class="pre">spender,</span> <span class="pre">uint256</span> <span class="pre">addedValue)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(bool)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">decreaseSupply(address</span> <span class="pre">spender,</span> <span class="pre">uint256</span> <span class="pre">subtractedValue)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(bool)</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<dl id="stoken-supports-freezing">
+<dt>Supports flexible rules for <strong>LOCK</strong></dt><dd><p>Function for lock:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">lock(address</span> <span class="pre">_addr,</span> <span class="pre">uint256</span> <span class="pre">_value)</span> <span class="pre">external</span> <span class="pre">returns</span> <span class="pre">(uint256)</span></code></p></li>
+</ul>
+<p>Function for unlock:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">unlock(address</span> <span class="pre">_addr,</span> <span class="pre">uint256</span> <span class="pre">_value)</span> <span class="pre">public</span> <span class="pre">returns</span> <span class="pre">(uint256)</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../technique/chain_store.html" class="btn btn-neutral float-right" title="ChainStore - Distributed DataBase Based On BlockChain" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../guide/query_stoken.html" class="btn btn-neutral float-left" title="How to query Stoken data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,779 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Application description and economic model &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Technical path" href="technical_path.html" />
+    <link rel="prev" title="Design concept and design principle" href="design_principle.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TOP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">Global decentralized-community alliance program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken Public-Sale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">How to participate in Stoken Public-Sale?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken Referral Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">How to join the whitelist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">How to query Stoken data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">New Contracts on Ethereum</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken Main Contract</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Technique</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - Distributed DataBase Based On BlockChain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Letters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">What you need to know as an investor</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Available services</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">BEYOU CONNECT (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: FREE ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">Optimized shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">How to set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> and <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">ETH wallet: imToken on Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">ETH wallet: MetaMask on PC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">How to use an ETH wallet?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken migration guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References and views</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken’s pricing logic and early opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">About Internet in China mainland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">BASIC PRINCIPLES</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">Contributing to Beyou Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">Exchange whitelist plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/chat.html">Chatting in group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">Donate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">Have questions or have an issue?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Policy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken shareholders program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">Chatting group</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Whitepaper v1.1.0</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="abbreviations.html">Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Our Philosophy: Yearning for freedom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design_principle.html">Design concept and design principle</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Application description and economic model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-distributed-extensible-virtual-network">A Distributed Extensible Virtual Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#turn-user-s-idle-network-resources-into-cash">Turn user’s idle network resources into cash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vpn-virtual-private-network">VPN, Virtual Private Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-vpn-to-cross-the-network-blockades-obvious-rigid-demands">Using VPN to cross the network blockades – obvious rigid demands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-situation-and-problems-of-traditional-vpn">Current situation and problems of traditional VPN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vnvpn">vnVPN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-can-vnvpn-helps-you">What can vnVPN helps you?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advantages-of-the-vnvpn">Advantages of the vnVPN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cdn-content-distribution-network">CDN, Content Distribution Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cost-and-efficiency-demands-of-cdn-service">Cost and efficiency demands of CDN service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vncdn">vnCDN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advantages-of-the-vncdn">Advantages of the vnCDN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ddos-attack">DDoS Attack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ddos-defense">DDoS Defense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-situation-and-problems-of-traditional-ddos-defense">The situation and problems of traditional DDoS Defense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vnddos-defense">vnDDoS Defense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-advantage-of-vnddos-security-system">The advantage of vnDDoS security system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proof-of-traffic">Proof of Traffic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-unique-token-in-the-beyou-network-ecosystem">Stoken – Unique token in the Beyou Network ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-100gb-client-traffic-flow">1 Stoken = 100GB client traffic flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pot-vs-pow">PoT vs. PoW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-price-of-resource-in-an-idc">The price of resource in an IDC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-stoken-dollar-price-should-increase-to-the-internal-value-gradually-and-be-relatively-stable">The Stoken dollar price should increase to the internal value gradually and be relatively stable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#official-server-nodes-around-the-world-would-provide-initial-ecological-services-to-users">Official server nodes around the world would provide initial ecological services to users</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="technical_path.html">Technical path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more.html">More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="token_and_distribution_plan.html">Stoken and distribution plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special_tips.html">Special tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="official_website.html">Official website</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact us</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Application description and economic model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/whitepaper/application_description_and_economic_model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="application-description-and-economic-model">
+<h1>Application description and economic model<a class="headerlink" href="#application-description-and-economic-model" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-distributed-extensible-virtual-network">
+<h2>A Distributed Extensible Virtual Network<a class="headerlink" href="#a-distributed-extensible-virtual-network" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/layers.png"><img alt="layers.png" class="align-center" src="../_images/layers.png" style="width: 100%;" /></a>
+<p>The existing infrastructures in the world is physically connected.
+While ISPs (Internet Service Providers) provide users with network access services,
+they can centralize blockades and block your access.
+The Beyou Network uses distributed peer-to-peer network technology to build a distributed,
+intelligent virtual network on the physical layer and ISP network layer through
+a large number of nodes, which can surely connect the whole world.</p>
+<p>The Beyou Network provides distributed services such as Auto-Proxy,
+multi-layer anonymous network, IM, non-polluted DNS, even CDN and DDoS defense, etc.
+The <a class="reference internal" href="#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a> with stable value scale will be used in the ecology and produce
+an incentive effect. Everyone can participate in distributed network construction.
+We believe the Beyou Network,
+a distributed Internet infrastructure will make the Internet more open,
+more equal, more stable, more efficient, safer and freer.</p>
+<p><strong>1 Stoken = 100 GB client network traffic (price at IDC is $8.0 - 8.5)</strong></p>
+<p>The user running the service node makes use of idle network resources to earn Stokens,
+and the user or organization that needs the service uses Stokens exchange to settle
+through the vnCHAIN blockchain.</p>
+</div>
+<div class="section" id="turn-user-s-idle-network-resources-into-cash">
+<h2>Turn user’s idle network resources into cash<a class="headerlink" href="#turn-user-s-idle-network-resources-into-cash" title="Permalink to this headline">¶</a></h2>
+<p>The vast majority of home broadband networks use less than 3% of the full-year network,
+a large number of network resources are idle.
+These idle resource fragments can be combined through technical means and can generate huge value.</p>
+<p>With the help of Beyou Network,
+users participating in the ecology can easily run BEYOU node programs on computers,
+routers, TV boxes, and even mobile devices,
+even if they do not have the professional technical ability to share idle network resources.
+The longer the time is online, the more Stokens can be obtained,
+which can be used to exchange the services you need in the ecology,
+or sell them on the exchange to turn your idle network resources into cash.</p>
+</div>
+<div class="section" id="vpn-virtual-private-network">
+<h2>VPN, Virtual Private Network<a class="headerlink" href="#vpn-virtual-private-network" title="Permalink to this headline">¶</a></h2>
+<p>Virtual Private Network, abbreviated as VPN,
+is commonly used to connect private networks between large and medium-sized enterprises or groups.
+It is a kind of way that can use open network (usually Internet)
+to transmit network information of intranet.
+VPN uses cryptographic tunneling protocol to realize accurate and secure transmission of information.</p>
+<p>In some regional networks where access is selectively restricted or blocked,
+because classic proxy services (such as HTTP proxy or Socks5 proxy, tec.)
+have been nearly impossible to use,
+VPN technology has almost become the preferred choice for cross the network blockages.</p>
+</div>
+<div class="section" id="using-vpn-to-cross-the-network-blockades-obvious-rigid-demands">
+<h2>Using VPN to cross the network blockades – obvious rigid demands<a class="headerlink" href="#using-vpn-to-cross-the-network-blockades-obvious-rigid-demands" title="Permalink to this headline">¶</a></h2>
+<p>Just in China, <strong>several tens of millions of users</strong> with rigid demands have not been satisfied.
+They need services like Google, Wikipedia, Facebook, Twitter,
+and access to professional websites in many fields. They are mainly:</p>
+<ul class="simple">
+<li><p>Scientists and scholars</p></li>
+<li><p>Companies engaged in scientific research</p></li>
+<li><p>International trade practitioners</p></li>
+<li><p>Foreigner in China, for working, studying or traveling.</p></li>
+<li><p>Design Company, Film Company, Designer</p></li>
+<li><p>Foreign-funded enterprise employees (mainly mobile office needs)</p></li>
+<li><p>Overseas game users</p></li>
+<li><p>Crypto-currency investors / holders / developers</p></li>
+<li><p>Others</p></li>
+</ul>
+<p>The network environment in China mainland is quite typical, the demand is concentrated and universal.
+Actually, not only in China mainland, but also in many parts of the world. For example, North America,
+Europe, and North Asia, there are also restrictions or speed limits or blockings.</p>
+</div>
+<div class="section" id="current-situation-and-problems-of-traditional-vpn">
+<h2>Current situation and problems of traditional VPN<a class="headerlink" href="#current-situation-and-problems-of-traditional-vpn" title="Permalink to this headline">¶</a></h2>
+<p>At present, the main way for users to go through the network blockade is to buy the VPN services
+provided by commercial software on a monthly basis,
+and very few users with technical ability may build their own servers.</p>
+<p>These companies and software services are affected by various factors,
+such as clear organization, limited server IP concentration,
+and unstable service due to the upgrading of the blockade technology,
+business policies, ethics, speed limit or even close the company,
+and so on is not uncommon.</p>
+</div>
+<div class="section" id="vnvpn">
+<h2>vnVPN<a class="headerlink" href="#vnvpn" title="Permalink to this headline">¶</a></h2>
+<p>A decentralized distributed VPN service with unlimited nodes can cross the blockade,
+and avoid DNS pollution. Rigid demand, huge base, clear technical path.</p>
+<p>The business logic of matching supply and demand is similar to shared economy models such as Ube.
+The technical advantage is that there is no need to set up a centralized intermediary organization,
+vnVPN create a decentralized platform based on blockchain and code rule.
+The contract is settled automatically, the node inside the wall pays the <a class="reference internal" href="#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a> as the demand side,
+and the outside node uses the idle bandwidth as the service party to provide
+the encrypted traffic-proxy service and automatically accept the <a class="reference internal" href="#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a> settlement,
+and use the PoT consensus based on the traffic. Online service, blockchain settlement.</p>
+</div>
+<div class="section" id="what-can-vnvpn-helps-you">
+<h2>What can vnVPN helps you?<a class="headerlink" href="#what-can-vnvpn-helps-you" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>Cross the network blockade</dt><dd><p>Without restriction, you can access any content. No matter where you are,
+vnVPN can always help you connect to anywhere of the Internet easily.</p>
+</dd>
+<dt>Use wireless networks anywhere safely</dt><dd><p>The widely used wireless hotspots not only bring convenience to users,
+but also bury the security problems. People who use the same network can easily eavesdrop
+on unprotected communications.</p>
+<p>If you are in a bank, airport, hotel, restaurant, coffee shop, hospital,
+shopping mall, or any other public network,
+using vnVPN will allow all your communications to use secure encrypted tunnels and avoid being hacked.</p>
+</dd>
+<dt>One-touch connection</dt><dd><p>The vnVPN interface is concise and clean, with one-click connection and easy to use,
+it does not require complex configuration and can be kept running in the background.</p>
+</dd>
+<dt>Smart routing</dt><dd><p>Smart offload mode can automatically determine whether the access is smooth.
+Only when the communication is blocked, the vnVPN network proxy is activated to save the traffic cost.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="advantages-of-the-vnvpn">
+<h2>Advantages of the vnVPN<a class="headerlink" href="#advantages-of-the-vnvpn" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 21%" />
+<col style="width: 22%" />
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>vnVPN</p></td>
+<td><p>Traditional VPN</p></td>
+<td><p>Non VPN</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Cross the network blockade</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Privacy protection</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Part</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Never breakdown</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Payment methods</strong></p></td>
+<td><p><strong>By traffic</strong></p></td>
+<td><p>Monthly/yearly</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Speed limit</strong></p></td>
+<td><p><strong>Fast</strong></p></td>
+<td><p>Relatively fast</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Price level</strong></p></td>
+<td><p><strong>Cheap</strong></p></td>
+<td><p>Expensive</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Number of nodes</strong></p></td>
+<td><p><strong>Unlimited</strong></p></td>
+<td><p>Limited</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Users can participate</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Traffic is permanently valid</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+<td><p>/</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Traversing regional technology blockages using global user dynamic IP communications</p></li>
+<li><p>Built-in vnDNS service to eliminate centralized DNS pollution</p></li>
+<li><p>User privacy protection mechanism</p></li>
+<li><p>Infinite node</p></li>
+<li><p>Zero management of service nodes, turn user’s idle network resources into cash</p></li>
+<li><p>Zero configuration of demand node, automatic update, smart proxy routing with vnPAC</p></li>
+<li><p>Traffic is permanently valid with no limit</p></li>
+</ul>
+</div>
+<div class="section" id="cdn-content-distribution-network">
+<h2>CDN, Content Distribution Network<a class="headerlink" href="#cdn-content-distribution-network" title="Permalink to this headline">¶</a></h2>
+<p>CDN is the content distribution network. By setting up node servers everywhere in the network,
+users can get the required content near the them, make the content more quickly and more stable,
+solve the situation of Internet network congestion,
+and improve the speed of communications to the web site.</p>
+</div>
+<div class="section" id="cost-and-efficiency-demands-of-cdn-service">
+<h2>Cost and efficiency demands of CDN service<a class="headerlink" href="#cost-and-efficiency-demands-of-cdn-service" title="Permalink to this headline">¶</a></h2>
+<p>Traditional centralized CDN services rely on IDC or cloud service providers.
+The number of nodes is limited, the servers and bandwidth resources are expensive.
+The website has to pay too much for it,
+however the efficiency and the user experience are also limited.</p>
+</div>
+<div class="section" id="vncdn">
+<h2>vnCDN<a class="headerlink" href="#vncdn" title="Permalink to this headline">¶</a></h2>
+<p>A decentralized distributed content of the accelerated distribution services,
+with unlimited nodes, it will be faster,
+has better prices and transparent measurement.</p>
+<p>The traditional centralized CDN service has great potential in optimizing efficiency and cost.
+Due to the limitation of IDC and cloud service providers, not only the number of nodes is limited,
+but also the traffic is expensive.
+Its central main operation is also often accused of data fraud and fuzzy accounting opaque.</p>
+<p>The vnCDN combines blockchain technology,
+distributed network and traditional CDN technology to share a huge user base with vnVPN,
+truly global infinite nodes, and more users can easily access computers, routers, TV boxes,
+mobile devices, or even just a RaspberryPI device running BEYOU node programs,
+taking advantage of the unlimited traffic and cost advantages of home bandwidth,
+sharing their idle bandwidth and storage, generating revenue,
+making Internet acceleration nodes ubiquitous. It also provides more affordable,
+faster, more nodes and transparent,
+metrological distributed CDN services for website owners who need to accelerate.</p>
+</div>
+<div class="section" id="advantages-of-the-vncdn">
+<h2>Advantages of the vnCDN<a class="headerlink" href="#advantages-of-the-vncdn" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 20%" />
+<col style="width: 23%" />
+<col style="width: 21%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>vnCDN</p></td>
+<td><p>Traditional CDN</p></td>
+<td><p>Direct to host</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Number of nodes</strong></p></td>
+<td><p><strong>Unlimited</strong></p></td>
+<td><p>Dozens</p></td>
+<td><p>Only one</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Speed limit</strong></p></td>
+<td><p><strong>Fast</strong></p></td>
+<td><p>Relatively fast</p></td>
+<td><p>Normal</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Efficiency</strong></p></td>
+<td><p><strong>High</strong></p></td>
+<td><p>Relatively high</p></td>
+<td><p>Normal</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Price level</strong></p></td>
+<td><p><strong>Cheap</strong></p></td>
+<td><p>Expensive</p></td>
+<td><p>Normal</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Users can participate</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Open SDK</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+<td><p>/</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Efficiency and user experience increased by more than 10 times</p></li>
+<li><p>Sharing a huge user base with vnVPN, truly global infinite nodes</p></li>
+<li><p>Allow users to use idle resources to participate in caching and distribution,
+and to obtain the traffic mining benefits of the PoT consensus mechanism</p></li>
+<li><p>Family VS. IDC，cost advantage of killer level</p></li>
+<li><p>Provide SDK to the admin management of the website, based on blockchain,
+the data is true and transparent, there is no possibility of fraud</p></li>
+</ul>
+</div>
+<div class="section" id="ddos-attack">
+<h2>DDoS Attack<a class="headerlink" href="#ddos-attack" title="Permalink to this headline">¶</a></h2>
+<p>Distributed Denial-of-Service Attack, abbreviated as DDoS attack or DDoS, also called flood attack,
+is a network attack method in which a hacker uses a plurality of hacked computers
+to forge a large number of normal requests.
+The target is to exhaust computer’s network or the system resources,
+temporarily interrupting or stopping the service, causing its normal users to lose connections.</p>
+</div>
+<div class="section" id="ddos-defense">
+<h2>DDoS Defense<a class="headerlink" href="#ddos-defense" title="Permalink to this headline">¶</a></h2>
+<p>Through hacker intrusion detection,
+multi-authentication and filtering of traffic is designed to filter traffic
+that blocks network bandwidth and allow normal access traffic to pass through,
+protecting the target computer, website or service.</p>
+</div>
+<div class="section" id="the-situation-and-problems-of-traditional-ddos-defense">
+<h2>The situation and problems of traditional DDoS Defense<a class="headerlink" href="#the-situation-and-problems-of-traditional-ddos-defense" title="Permalink to this headline">¶</a></h2>
+<p>DDoS Defense is one of the major cost for services such as websites and APPs.</p>
+<p>Because of intermittent demand,
+self-built protective server resources are too expensive to afford,
+so generally purchasing professional services is the only choice.
+The service provider provides traffic cleaning and protection services by setting up Access Gateway.
+The service provider is not much, Monopoly Competition Market.</p>
+<p>Generally speaking, it consists of a monthly service fee and a resource consumption cost.
+Even if it is an entry-level service, it will cost about a few thousand dollars per month.
+This is simply the basic cost regardless of whether or not there is an attack,
+and the cost of resource consumption once the attack occurs is much more expensive.</p>
+</div>
+<div class="section" id="vnddos-defense">
+<h2>vnDDoS Defense<a class="headerlink" href="#vnddos-defense" title="Permalink to this headline">¶</a></h2>
+<p>vnDDoS takes full advantage of large number of distributed nodes and low cost
+by using idle bandwidth to provide hybrid DDoS defense solutions and services.</p>
+<p>More nodes, lower prices, traffic-based payments, and reliable services.</p>
+</div>
+<div class="section" id="the-advantage-of-vnddos-security-system">
+<h2>The advantage of vnDDoS security system<a class="headerlink" href="#the-advantage-of-vnddos-security-system" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 24%" />
+<col style="width: 39%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>vnDDoS Defense</p></td>
+<td><p>Traditional DDoS Defense</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pay for used</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Part</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>monthly fee</strong></p></td>
+<td><p><strong>None</strong></p></td>
+<td><p>Expensive</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Nodes</strong></p></td>
+<td><p><strong>Unlimited</strong></p></td>
+<td><p>Hundreds</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Price level</strong></p></td>
+<td><p><strong>Lower</strong></p></td>
+<td><p>Much higher</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Users participation</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SDK support</strong></p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="proof-of-traffic">
+<h2>Proof of Traffic<a class="headerlink" href="#proof-of-traffic" title="Permalink to this headline">¶</a></h2>
+<p>Compared with the workload of <strong>Proof of Work</strong>,
+it is proved that the accounting method of PoW does
+not require equipment competition or power consumption,
+but writes the ratio of <a class="reference internal" href="#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a> to network traffic flow resource service
+as a constant definition in the underlying code.</p>
+</div>
+<div class="section" id="stoken-unique-token-in-the-beyou-network-ecosystem">
+<span id="stoken"></span><h2>Stoken – Unique token in the Beyou Network ecosystem<a class="headerlink" href="#stoken-unique-token-in-the-beyou-network-ecosystem" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Stoken</span></code> is the unique token in the Beyou Network ecosystem,
+which uses <strong>Proof of Traffic</strong> consensus mechanism. It is the native asset on the vnCHAIN.</p>
+<p>At the beginning of the project,
+<a class="reference internal" href="#stoken"><span class="std std-ref">Stoken – Unique token in the Beyou Network ecosystem</span></a> will be strictly based on the ERC20 token standard,
+it is created on the Ethereum network.
+After the vnCHAIN main network is officially installed and stabilized,
+the image will be migrated through signature verification.</p>
+</div>
+<div class="section" id="stoken-100gb-client-traffic-flow">
+<h2>1 Stoken = 100GB client traffic flow<a class="headerlink" href="#stoken-100gb-client-traffic-flow" title="Permalink to this headline">¶</a></h2>
+<p>In the underlying code,
+we defined per unit of <code class="docutils literal notranslate"><span class="pre">Stoken</span></code> as the client traffic of 100GBytes in the Beyou Network,
+that is: <strong>1 Stoken = 100GB client traffic flow.</strong></p>
+</div>
+<div class="section" id="pot-vs-pow">
+<h2>PoT vs. PoW<a class="headerlink" href="#pot-vs-pow" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 31%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Proof of Traffic</p></td>
+<td><p>Proof of work</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Hardware requirements</strong></p></td>
+<td><p><strong>Low</strong></p></td>
+<td><p>Higher and higher</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Power consumption</strong></p></td>
+<td><p><strong>Very economical</strong></p></td>
+<td><p>Extremely wasteful</p></td>
+</tr>
+</tbody>
+</table>
+<p>Equipment competition and power waste are recognized by the PoW consensus mechanism
+as the two major persistent diseases.</p>
+<p>From the beginning of CPU mining, going through GPUs, FPGAs, and so on,
+generation after generation of ASIC chip mining machines
+that were createdfor the mining priced thousands of dollars,
+these constantly updating equipment,
+in addition to the internal friction of the accounting rights,
+and there is no other value for humanity.</p>
+<p>The consumption of electricity is even more fearless.
+According to DigiConomist, 2017, bitcoin mining consumes 30 billion kilowatts of electricity,
+accounts for 0.13% of global electricity consumption,
+exceeds the national electricity consumption of dozens of countries,
+and showing a rising trend year by year.</p>
+<a class="reference internal image-reference" href="../_images/rpi3bp.jpg"><img alt="rpi3bp.jpg" class="align-center" src="../_images/rpi3bp.jpg" style="width: 100%;" /></a>
+<p>The Beyou Network pioneered the definition of the <strong>Proof of Traffic</strong> consensus mechanism,
+the BEYOU node has only a very low performance requirement for the device,
+rather than a more meaningful power race.
+A Raspberry Pi (see attached, only consumes 1 degree of electric power per week)
+which priced $35, is enough to meet the hardware requirements of a node,
+and higher computing performance will not bring about a linear increase in revenue.</p>
+<p>In the age of the Internet,
+bandwidth and traffic are <strong>clearly valued and easily measurable resources</strong>.
+Quantifying the traffic services provided by nodes as universal equivalents
+that are more <strong>currency means</strong> not only a solid value base
+but also Stoken’s dollar price is more stable,
+and can effectively avoid the news pricing, PR pricing, emotional pricing.
+And on the other way, it effectively avoids unrestrained price speculation at the same time.</p>
+<dl class="simple">
+<dt>Raspberry Pi:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.raspberrypi.org/">Raspberrypi.org</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi - WikiPedia(English)</a></p></li>
+<li><p><a class="reference external" href="https://zh.wikipedia.org/wiki/%E6%A0%91%E8%8E%93%E6%B4%BE">Raspberry Pi - WikiPedia(Chinese)</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="the-price-of-resource-in-an-idc">
+<span id="id1"></span><h2>The price of resource in an IDC<a class="headerlink" href="#the-price-of-resource-in-an-idc" title="Permalink to this headline">¶</a></h2>
+<p>For 100GB network traffic, there is a price reference for mature IDC,
+with Amazon Web Services AWS, for example, priced at about <strong>$8.50</strong> per 100GB traffic
+and Google Cloud Platform GCP at about <strong>$8.0</strong>.</p>
+<p>Accelerating traffic is more expensive, while ordinary traffic is cheaper.</p>
+<p>CDN needs node storage and outlet traffic,
+and VPN service needs both down-link and up-link traffic to complete proxy forwarding,
+that is, 100GB client traffic is about equal to the traffic of 200GB on the service-side
+(100GB up-link 100GB down-link).</p>
+<p>Therefore, 100 GB client traffic flow, anchored to 1 Stoken,
+also coincides with the actual intrinsic use value.</p>
+<dl class="simple">
+<dt>AWS Amazon Web Services:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://aws.amazon.com/directconnect/pricing/">AWS Direct Connect pricing</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/cloudfront/pricing/">AWS CloudFront Pricing</a></p></li>
+</ul>
+</dd>
+<dt>GCP Google Cloud Platform:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://cloud.google.com/interconnect/">GCP Interconnect Pricing</a></p></li>
+<li><p><a class="reference external" href="https://cloud.google.com/cdn/pricing/">GCP CDN Pricing</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="the-stoken-dollar-price-should-increase-to-the-internal-value-gradually-and-be-relatively-stable">
+<h2>The Stoken dollar price should increase to the internal value gradually and be relatively stable<a class="headerlink" href="#the-stoken-dollar-price-should-increase-to-the-internal-value-gradually-and-be-relatively-stable" title="Permalink to this headline">¶</a></h2>
+<p>We believe that the legal currency will not disappear in the short term,
+and that long-standing habits will allow more people
+to use the fiat currency to price products or services.
+At the same time, we expect that the Stoken value scale
+after ecological maturity is relatively stable
+(that is, the legal currency price is relatively stable),
+and the basic setting of 1 Stoken = 100 GB can ensure that
+the market circulation price of Stoken gradually matures
+with the ecological value in practical use value.</p>
+</div>
+<div class="section" id="official-server-nodes-around-the-world-would-provide-initial-ecological-services-to-users">
+<h2>Official server nodes around the world would provide initial ecological services to users<a class="headerlink" href="#official-server-nodes-around-the-world-would-provide-initial-ecological-services-to-users" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/idcs.png"><img alt="idcs.png" class="align-center" src="../_images/idcs.png" style="width: 100%;" /></a>
+<p>In the initial stage of ecological start-up, the official server nodes in 86 IDCs around the world will provide stable services to users. As time goes on, more node programs will be run by users, and the ecology will become more mature.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="technical_path.html" class="btn btn-neutral float-right" title="Technical path" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="design_principle.html" class="btn btn-neutral float-left" title="Design concept and design principle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

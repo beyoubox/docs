@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Global decentralized-community alliance program" href="../policy/community_program.html" />
+    <link rel="prev" title="Welcome to beyou.network!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TOP</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stoken</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-main-contract-upgrade">Stoken Main Contract Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-migration-program-guide">Stoken Migration Program &amp; Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-shareholders-program">Stoken Shareholders Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-public-sale-program">Stoken Public-sale Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contracts-for-data-query">Contracts for data query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-community-alliance-program">Stoken Community Alliance Program</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">Global decentralized-community alliance program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken Public-Sale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">How to participate in Stoken Public-Sale?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken Referral Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">How to join the whitelist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">How to query Stoken data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">New Contracts on Ethereum</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken Main Contract</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Technique</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - Distributed DataBase Based On BlockChain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Letters</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">What you need to know as an investor</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Available services</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">BEYOU CONNECT (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: FREE ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">Optimized shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">How to set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> and <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">ETH wallet: imToken on Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">ETH wallet: MetaMask on PC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">How to use AutoSSR on iOS?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">How to use AutoSSR on Android?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">How to use ShadowsocksR on windows?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">How to use ShadowsocksX-NG-R on Mac?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">How to use an ETH wallet?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken migration guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References and views</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken’s pricing logic and early opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">About Internet in China mainland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">BASIC PRINCIPLES</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">Contributing to Beyou Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">Exchange whitelist plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/chat.html">Chatting in group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">Donate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">Have questions or have an issue?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Policy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken shareholders program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">Chatting group</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Whitepaper v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Our Philosophy: Yearning for freedom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">Design concept and design principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Application description and economic model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">Technical path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/more.html">More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/token_and_distribution_plan.html">Stoken and distribution plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/special_tips.html">Special tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/official_website.html">Official website</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contact us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">Contact us</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/news/stoken2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken">
+<span id="news-stoken2"></span><h1>Stoken<a class="headerlink" href="#stoken" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="sidebar-title">HOLD SPACE, HOLD Stoken.</p>
+<p>Beyou.Network Project Team</p>
+<p>Oct 2019</p>
+</div>
+<p>Dear holders, technical geeks, community members, supporters, hello to everyone!</p>
+<p>Since the Stoken public-sale,
+the Beyou Network project has received much attention.
+Under the multi-dimensional and wide-ranging awareness,
+the Beyou Network has won the favor of a group of holders with beyou.
+They not only bought Stoken but also sent emails
+to provide advices on community governance and ecological construction.</p>
+<p>At the same time,
+more and more members have joined the volunteer work of the Stoken community.
+They have done a lot of experimental, exploratory, and far-sighted practical work,
+which has provided an excellent imperative for the whole ecological construction.</p>
+<p>At present, the Beyou Network has more than 30 stable test nodes all over the world,
+which provides a fundamental basis for the smooth use and in-depth development of the network in the future.
+We are also happy to see the massive users and activity data:
+more than 2,600 users have entree to the test-net, averaging 1.9 hours per day.
+In the current situation where the vnCHAIN is under development,
+it is beneficial to have such data for everyone.</p>
+<p>We want to thank all Beyou Network participants and Stoken holders.
+The contribution of Beyou Network Ecology is inseparable from the input of every member, thank you, everyone!</p>
+<p>As we all know, since the public sale, we have encountered some unforeseen troubles.
+The most challenging thing is that the centralized exchanges forced the listing of the Stoken.
+It not only interrupted our sales plan but also brought some holders in the loss of interest.
+Our original plan was to announce the exchange whitelist plan after the 10th season
+and start the trading market in an orderly manner.
+Why should we start the trading plan at a particular stage,
+to maximize the protection of the holder’s profits!
+However, due to the open-source feature of Stoken,
+many exchanges forcibly meddled the ecology, without approved.
+They also disrupted the market price,
+which has brought many troubles to the public-sale and community foundation.</p>
+<p>A project without value never gets noticed,
+and many exchanges have seen the value of the Beyou Network project,
+which is an excellent performance for the industry.
+In the prior time, some exchanges have also used their traffic to drive,
+which is worth affirming. However, according to our observations,
+some unknown exchanges produced a large amount of fake Stoken and data.
+That is not consistent with the actual circumstance of the market,
+because some people want to create panic to gain personal benefit.
+It also confirms our speculation, but at that time, we did not have rather data,
+and it is not advisable to make arbitrary conclusions by guessing.
+That is why we made a global announcement,
+rejected some of the community members’ requests for us to manipulate the market to drive prices.
+Therefore, we lost some supporters who thought we were not following the advice.
+However, the real situation is that we don’t want all the participants to run hard,
+but only the exchanges get the benefits.
+No matter who plays in the market price manipulation,
+the profiteering party can only be the exchange, not the holders of Stoken.</p>
+<p>In the past two months,
+we have continued to maintain the healthy development of the work,
+while also trying to find effective strategies to help public-sale and protect the interests of the holders.
+Here we would like to thank the many community members, including the V5 team,
+who provided valuable feedback and suggestions from multiple perspectives.</p>
+<p>We know something: our team is good at technology,
+but not good at bragging and marketing.
+What is certain is that the business design of the Beyou Network is not a cash game,
+but based on real needs, rigid demand, and in line with the fundamental laws of business.
+We believe that we can reach these steadily,
+which is the source of confidence for our project team.</p>
+<p>A large-scale, healthy,
+and ecological creation and growth must take a certain amount of time,
+which requires the efforts of many people.
+Stoken’s early low-price sales reserved plenty of profit room for subsequent growth,
+which should be shared by all eco-participants.
+Moreover, the current number of users is not enough.
+In the past, we have seen many holders impulsively selling;
+they did not understand the project in-depth and were also affected by panic.
+There are also many factors (includes the exchanges) that combine to form the current situation.</p>
+<p>We believe in rigid demand and a solid technical foundation.
+Ecological growth is only a matter of time.</p>
+<p>Based on long-term, multi-perspective careful considerations,
+we have a serial of crucial strategies
+for the entire ecological construction and common interests of the Beyou Network.
+We hope that all community members can support and cooperate to promote the steady realization of ecological values.
+Thus, to ensure that all holders become the ultimate winner of this ecology.</p>
+<div class="section" id="stoken-main-contract-upgrade">
+<h2>Stoken Main Contract Upgrade<a class="headerlink" href="#stoken-main-contract-upgrade" title="Permalink to this headline">¶</a></h2>
+<p>By <a class="reference internal" href="../stoken/stoken_main_contract.html#stoken2-main-contract"><span class="std std-ref">Stoken Main Contract</span></a>, the new symbol is <strong>Stoken</strong>,
+and every holder should follow the <a class="reference internal" href="../guide/stoken2_migration.html#stoken2-migration"><span class="std std-ref">Stoken migration guide</span></a>.</p>
+<p>Here are some significant features of <strong>Stoken</strong>:</p>
+<dl class="simple">
+<dt>Supports flexible rules for <strong>FREEZING</strong>:</dt><dd><p>Flexible rules by external contracts.</p>
+</dd>
+<dt>Supports <strong>BURNING</strong>:</dt><dd><p>Supports burning with a <code class="docutils literal notranslate"><span class="pre">Burn</span></code> event and also reduces the <strong>TOTAL SUPPLY CAP LIMIT</strong>.</p>
+</dd>
+<dt>Supports <strong>SAFE-MODE</strong>:</dt><dd><p>Transfers from non-whitelisted addresses are restricted
+when the amount number of Stoken holders is insufficient to form a healthy ecological foundation.
+That is a <strong>SAFE-MODE</strong> for Stoken.</p>
+</dd>
+<dt>Supports <strong>BURNING-MODE</strong>:</dt><dd><p>When <strong>Burning-mode</strong> is on, <strong>1%</strong> will be <strong>burned</strong> for every transaction of Stoken.</p>
+</dd>
+<dt>Optimized whitelist rules:</dt><dd><p>By transferring 1,001 Stoken to a whitelisted address,
+will sign-up for whitelist and get 1 Stoken refund as a success signal automatically.</p>
+</dd>
+<dt>Whitelist migration:</dt><dd><p>A total of 6736 whitelist migrations have been completed
+before the #8404486 block (2019-08-23 04:48:51 UTC).</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="stoken-migration-program-guide">
+<h2>Stoken Migration Program &amp; Guide<a class="headerlink" href="#stoken-migration-program-guide" title="Permalink to this headline">¶</a></h2>
+<p>All Stoken holders should follow <a class="reference internal" href="../guide/stoken2_migration.html#stoken2-migration"><span class="std std-ref">Stoken migration guide</span></a>
+to finish the migration before <strong>2019-09-07 23:59:59 UTC</strong>.
+Convert your Stoken to <strong>Stoken</strong>.</p>
+<p>Once your Stoken is migrated to Stoken,
+you will automatically become a Stoken <strong>SHAREHOLDER</strong>,
+have a 30% annual interest rate,
+and enjoy the #6-20 season sales dividend according to <a class="reference internal" href="../policy/stoken_shareholders_program.html#stoken2-shareholders-program"><span class="std std-ref">Stoken shareholders program</span></a>.</p>
+</div>
+<div class="section" id="stoken-shareholders-program">
+<h2>Stoken Shareholders Program<a class="headerlink" href="#stoken-shareholders-program" title="Permalink to this headline">¶</a></h2>
+<p>More than $14,885,025.49 is about to be paid as a dividend, settled with ETH,
+control by <span class="xref std std-ref">stoken2_shareholders_contract</span> on Ethereum.</p>
+<p>You can read <a class="reference internal" href="../policy/stoken_shareholders_program.html#stoken2-shareholders-program"><span class="std std-ref">Stoken shareholders program</span></a> for more details, and there is a dividend table.</p>
+</div>
+<div class="section" id="stoken-public-sale-program">
+<h2>Stoken Public-sale Program<a class="headerlink" href="#stoken-public-sale-program" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>#6 - 20 season</p></li>
+<li><p>#3277 - 12000 stage</p></li>
+<li><p>$0.03377 - $0.12100 USD</p></li>
+</ul>
+<p>More details: <a class="reference internal" href="../stoken/stoken_sale.html#stoken2-sale"><span class="std std-ref">Stoken Public-Sale</span></a></p>
+</div>
+<div class="section" id="contracts-for-data-query">
+<h2>Contracts for data query<a class="headerlink" href="#contracts-for-data-query" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../guide/query_stoken.html#query-stoken"><span class="std std-ref">How to query Stoken data</span></a></p></li>
+<li><p><span class="xref std std-ref">query_public_sale</span></p></li>
+</ul>
+</div>
+<div class="section" id="stoken-community-alliance-program">
+<h2>Stoken Community Alliance Program<a class="headerlink" href="#stoken-community-alliance-program" title="Permalink to this headline">¶</a></h2>
+<p>#TBC</p>
+<hr class="docutils" />
+<p>HOLD SPACE, HOLD Stoken.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../policy/community_program.html" class="btn btn-neutral float-right" title="Global decentralized-community alliance program" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to beyou.network!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
